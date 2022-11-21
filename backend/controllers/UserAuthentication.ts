@@ -3,11 +3,12 @@ import { StatusCodes } from 'http-status-codes';
 import BadRequest from "../Error/BadRequest"
 import asyncHandler from 'express-async-handler';
 import User from '../models/UserModel'
+import { UserType } from '../types/Interfaces';
 
 
 //create an account
-const RegisterAccount = asyncHandler(async(req:Request,res:Response):Promise<void>=>{
-   
+const RegisterAccount = asyncHandler(async(req:Request,res:Response)=>{
+    
 })
 
 

@@ -1,10 +1,9 @@
- import mongoose,{ Schema } from "mongoose";
+import mongoose,{ Schema } from "mongoose";
 import { Workers } from "../types/Interfaces"
- import {v4 as uuidv4} from 'uuid';
+import { IdenticationID } from "../utils/createID";
 
 
-
- const EmployeeId:string=uuidv4().split('-')[0]
+ 
 
 
  const workerSchema = new Schema<Workers>({
@@ -18,7 +17,7 @@ import { Workers } from "../types/Interfaces"
   },
   EmployeeId:{
     type:String,
-    default:EmployeeId
+    default:IdenticationID
   } ,
   gender:{
     type:String,

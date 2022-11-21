@@ -26,3 +26,7 @@ export interface VerificationToken {
     OneTimePassword:string,
     createdAt:Date
 }
+
+export interface Appointment{
+    
+}

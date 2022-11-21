@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
-import { MONGO_URI } from "./config";
+require("dotenv").config();
+
+
 
 export const connection =async() =>{
  try {
