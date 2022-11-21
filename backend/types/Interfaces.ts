@@ -28,5 +28,14 @@ export interface VerificationToken {
 }
 
 export interface Appointment{
-    
+    name:string,
+    email:string,
+    service:string,
+    phone:string,
+    date:string,
+    time:string,
+    doctor:string,
+    status:String,
+    createdBy?:mongoose.Types.ObjectId,
+    appointmentId:string
 }
